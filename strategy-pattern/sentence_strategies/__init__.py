@@ -2,25 +2,26 @@ from typing import List
 from random import shuffle
 
 
-def random_sentence_strategy(vocab: List[str]) -> str:
+def random_sentence_strategy(vocab: List[str]) -> None:
     """
     A strategy function that generates and returns a random sentence.
     """
-    return " ".join(shuffle(vocab))
+    shuffle(vocab)
+    print(" ".join(vocab))
 
 
-def regular_sentence_strategy(vocab: List[str]) -> str:
+def regular_sentence_strategy(vocab: List[str]) -> None:
     """
     A strategy function that generates and returns a regularly ordered sentence.
     """
-    return " ".join(vocab)
+    print(" ".join(vocab))
 
 
-def sorted_sentence_strategy(vocab: List[str]) -> str:
+def sorted_sentence_strategy(vocab: List[str]) -> None:
     """
     A strategy function that generates and returns a sorted sentence.
     """
-    return " ".join(sorted(vocab))
+    print(" ".join(sorted(vocab)))
 
 
 def lowercase_transform_strategy(word: str) -> str:
