@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./strategy-pattern"
+    ],
+    "python.formatting.provider": "black"
+}
